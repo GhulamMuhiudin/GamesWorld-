@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MGS Δ: Snake Eater</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        background-color: #121212;
+        color: #e0e0e0;
+        font-family: "Segoe UI", sans-serif;
+      }
+      .navbar {
+        background-color: #1f1f1f;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        color: #ff4757;
+      }
+      .nav-link {
+        color: #e0e0e0 !important;
+      }
+      .nav-link:hover {
+        color: #ff6b81 !important;
+      }
+      .hero {
+        background: url("https://www.konami.com/mg/mgs3r/s/img/share_img.jpg?v2")
+          center center/cover no-repeat;
+        height: 70vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero-overlay {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 50px;
+        border-radius: 10px;
+      }
+      .section-title {
+        color: #ffcc00;
+        border-bottom: 2px solid #ffcc00;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      .info-box {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-left: 5px solid #ffcc00;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .carousel img {
+        border-radius: 10px;
+        height: 400px;
+        object-fit: cover;
+      }
+      .btn-custom {
+        background-color: #ffcc00;
+        color: #000;
+        border: none;
+      }
+      .btn-custom:hover {
+        background-color: #e6b800;
+      }
+      footer {
+        background-color: #1f1f1f;
+        color: #bbb;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="logo.png"
+            alt="Logo"
+            width="40"
+            class="rounded-circle me-2"
+          />
+          Gaming World
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reviews.html">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UpcommingPage.html">Upcoming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guides.html">Guides</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero text-center text-white"></div>
+
+    <div class="container py-5">
+      <h2 class="section-title">Game Overview</h2>
+      <p>
+        Metal Gear Solid Δ: Snake Eater is a masterfully reimagined version of
+        the beloved 2004 classic, rebuilt with cutting-edge graphics and modern
+        gameplay enhancements for a new generation. Step into the boots of Naked
+        Snake, an elite operative sent deep into Soviet territory on a perilous
+        stealth mission that will define the origins of the legendary Big Boss.
+        Set in a richly detailed 1960s jungle environment, the game blends
+        tactical espionage, survival mechanics, and emotional storytelling in a
+        way only Kojima’s vision can deliver. With enhanced visuals powered by
+        Unreal Engine 5, immersive sound design, and faithful voice
+        performances, Snake Eater Δ promises to reignite the legacy of one of
+        gaming’s most iconic titles now more intense and immersive than ever
+        before
+      </p>
+
+      <h2 class="section-title mt-5">Key Features</h2>
+      <ul>
+        <li class="list-group-item text-white">
+          > Photorealistic graphics with next-gen lighting and textures
+        </li>
+        <li class="list-group-item text-white">
+          > Updated controls with modern gameplay enhancements
+        </li>
+        <li class="list-group-item text-white">
+          > Iconic jungle stealth gameplay preserved and improved
+        </li>
+        <li class="list-group-item text-white">
+          > Full voice-acting from original cast
+        </li>
+        <li class="list-group-item text-white">
+          > Survival mechanics: hunting, healing, camouflage
+        </li>
+        <li class="list-group-item text-white">
+          > Expanded cutscenes and environmental storytelling
+        </li>
+      </ul>
+
+      <h2 class="section-title mt-5">Screenshots</h2>
+      <div
+        id="screenshotsCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2417610/ss_314db4d0d0ed652b5f080fc4cfd441e7bccbfaa4.1920x1080.jpg?t=1749734161"
+              class="d-block w-100"
+              alt="Screenshot 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2417610/ss_067293ab0472c8701d8eda13e1a870484aedb7e4.1920x1080.jpg?t=1749734161"
+              class="d-block w-100"
+              alt="Screenshot 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/05/metal-gear-solid-delta-metal-gear-survive.jpg"
+              class="d-block w-100"
+              alt="Screenshot 3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#screenshotsCarousel"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-dark rounded-circle"
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#screenshotsCarousel"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-dark rounded-circle"
+          ></span>
+        </button>
+      </div>
+
+      <div class="info-box mt-5">
+        <h4>Release Date: <strong>August 28, 2025</strong></h4>
+        <p><strong>Platforms:</strong> PlayStation 5, Xbox Series X|S, PC</p>
+        <p><strong>Developer:</strong> Konami</p>
+        <p><strong>Publisher:</strong> Konami</p>
+        <p><strong>Genre:</strong> Stealth, Action, Adventure</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="text-center">
+        <p>&copy; 2025 Gaming World. All rights reserved.</p>
+        <p>Follow us on social media | Terms & Privacy</p>
+      </div>
+    </footer>
+  </body>
+</html>

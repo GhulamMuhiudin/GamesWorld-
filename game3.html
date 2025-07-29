@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ghost of Yōtei</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        background-color: #121212;
+        color: #e0e0e0;
+        font-family: "Segoe UI", sans-serif;
+      }
+      .navbar {
+        background-color: #1f1f1f;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        color: #ff4757;
+      }
+      .nav-link {
+        color: #e0e0e0 !important;
+      }
+      .nav-link:hover {
+        color: #ff6b81 !important;
+      }
+      .hero {
+        background: url("https://i.ytimg.com/vi/7z7kqwuf0a8/maxresdefault.jpg")
+          center center/cover no-repeat;
+        height: 70vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero-overlay {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 50px;
+        border-radius: 10px;
+      }
+      .section-title {
+        color: #ffcc00;
+        border-bottom: 2px solid #ffcc00;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      .info-box {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-left: 5px solid #ffcc00;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .carousel img {
+        border-radius: 10px;
+        height: 400px;
+        object-fit: cover;
+      }
+      .btn-custom {
+        background-color: #ffcc00;
+        color: #000;
+        border: none;
+      }
+      .btn-custom:hover {
+        background-color: #e6b800;
+      }
+      footer {
+        background-color: #1f1f1f;
+        color: #bbb;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="logo.png"
+            alt="Logo"
+            width="40"
+            class="rounded-circle me-2"
+          />
+          Gaming World
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reviews.html">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UpcommingPage.html">Upcoming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guides.html">Guides</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero text-center text-white"></div>
+
+    <div class="container py-5">
+      <h2 class="section-title">Game Overview</h2>
+      <p>
+        Ghost of Yōtei transports players to a mystical and war-torn feudal
+        Japan, shadowed by the towering presence of Mount Yōtei. In this
+        atmospheric open-world action-adventure, you step into the role of a
+        lone samurai turned spirit warrior, battling both mortal foes and
+        supernatural entities in a tale driven by honor, revenge, and
+        redemption. Blending elegant swordplay with stealth, spiritual
+        abilities, and a dynamic day-night cycle, the game offers a cinematic
+        experience enriched with hauntingly beautiful landscapes and deep
+        narrative choices. Developed by Kojima Arts Studio, Ghost of Yōtei is
+        poised to be one of 2025’s most anticipated titles, promising
+        emotionally charged storytelling, refined combat, and a world where
+        every shadow may conceal danger or destiny.
+      </p>
+
+      <h2 class="section-title mt-5">Key Features</h2>
+      <ul>
+        <li class="list-group-item text-white">
+          > Hauntingly beautiful open world inspired by Hokkaido
+        </li>
+        <li class="list-group-item text-white">
+          > Real-time sword combat mixed with spirit abilities
+        </li>
+        <li class="list-group-item text-white">
+          > Deep lore with branching narrative choices
+        </li>
+        <li class="list-group-item text-white">
+          > Dynamic weather and day-night system
+        </li>
+        <li class="list-group-item text-white">
+          > Collect ancient relics and unlock spirit powers
+        </li>
+      </ul>
+
+      <h2 class="section-title mt-5">Screenshots</h2>
+      <div
+        id="screenshotsCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/11/ghost-of-yotei.jpg"
+              class="d-block w-100"
+              alt="Screenshot 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.dlcompare.com/others_jpg/upload/news/image/en-ghost-of-yotei-teaser-sparks-5b087465-image-5b08744e.jpg.webp"
+              class="d-block w-100"
+              alt="Screenshot 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://comicbook.com/wp-content/uploads/sites/4/2024/09/9c9e50e3-ba16-4234-b1cc-3ad77239f2c7.jpg"
+              class="d-block w-100"
+              alt="Screenshot 3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#screenshotsCarousel"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-dark rounded-circle"
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#screenshotsCarousel"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-dark rounded-circle"
+          ></span>
+        </button>
+      </div>
+
+      <div class="info-box mt-5">
+        <h4>Expected Release: <strong>Summer 2025</strong></h4>
+        <p><strong>Platforms:</strong> PlayStation 5, Xbox Series X|S, PC</p>
+        <p><strong>Developer:</strong> Kojima Arts Studio</p>
+        <p><strong>Publisher:</strong> Legends Interactive</p>
+        <p><strong>Genre:</strong> Action, Samurai, Open-World</p>
+      </div>
+    </div>
+    <footer class="text-center">
+        <p>&copy; 2025 Gaming World. All rights reserved.</p>
+        <p>Follow us on social media | Terms & Privacy</p>
+      </footer>
+  </body>
+</html>
